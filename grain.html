@@ -6,7 +6,7 @@
     <title>grain</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="goto.html" title="goto" />
@@ -39,20 +39,20 @@
           </p>
       </div>
       <div class="refsect1">
-        <a id="idm145768"></a>
+        <a id="id148335"></a>
         <h2>Description</h2>
         <p>
       Generates granular synthesis textures.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm145771"></a>
+        <a id="id148338"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">ares <span class="command"><strong>grain</strong></span> xamp, xpitch, xdens, kampoff, kpitchoff, kgdur, igfn, \
       iwfn, imgdur [, igrnd]</pre>
       </div>
       <div class="refsect1">
-        <a id="idm145775"></a>
+        <a id="id148342"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>igfn</em></span> -- The ftable number of the grain waveform. This can be just a sine wave or a sampled sound.
@@ -68,7 +68,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm145790"></a>
+        <a id="id148357"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>xamp</em></span> -- Amplitude of each grain.
@@ -101,21 +101,21 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm145823"></a>
+        <a id="id148390"></a>
         <h2>Examples</h2>
         <p>
-      This example generates a texture with gradually shorter grains and wider amp and pitch spread. It uses the file <a class="ulink" href="examples/grain.csd" target="_top"><em class="citetitle">grain.csd</em></a>, and <a class="ulink" href="examples/beats.wav" target="_top"><em class="citetitle">beats.wav</em></a>.
+      This example generates a texture with gradually shorter grains and wider amp and pitch spread. It uses the file <a class="ulink" href="examples/grain.csd" target="_top"><em class="citetitle">grain.csd</em></a>, and <a class="ulink" href="examples/drumsMlp.wav" target="_top"><em class="citetitle">drumsMlp.wav</em></a>.
 
       </p>
         <div class="example">
-          <a id="idm145830"></a>
+          <a id="id148397"></a>
           <p class="title">
-            <strong>Example 427. Example of the grain opcode.</strong>
+            <strong>Example 428. Example of the grain opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm145837"></a>
+              <a id="id148404"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span> 
 <span class="nt">&lt;CsOptions&gt;</span> 
@@ -153,7 +153,7 @@
 </span><span class="nt">&lt;/CsInstruments&gt;</span> 
 <span class="nt">&lt;CsScore&gt;</span><span class="w"> 
 </span><span class="nb">f</span><span class="mi">5</span><span class="w">  </span><span class="mi">0</span><span class="w"> </span><span class="mi">512</span><span class="w">  </span><span class="mi">20</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="c1">; Hanning window </span><span class="w">
-</span><span class="nb">f</span><span class="mi">10</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">16384</span><span class="w"> </span><span class="mi">1</span><span class="w">  </span><span class="s">"beats.wav"</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> 
+</span><span class="nb">f</span><span class="mi">10</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">16384</span><span class="w"> </span><span class="mi">1</span><span class="w">  </span><span class="s">"drumsMlp.wav"</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> 
 
 </span><span class="nb">i</span><span class="mi">1</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">15</span><span class="w"> 
 </span><span class="nb">e</span><span class="w"> 
@@ -167,7 +167,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm146115"></a>
+        <a id="id148682"></a>
         <h2>Credits</h2>
         <p>
       </p>

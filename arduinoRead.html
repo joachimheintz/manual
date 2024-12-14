@@ -6,7 +6,7 @@
     <title>arduinoRead</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="apoleparams.html" title="apoleparams" />
@@ -39,7 +39,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm33004"></a>
+        <a id="id34738"></a>
         <h2>Description</h2>
         <p>Plugin opcode in serial.</p>
         <p>
@@ -47,12 +47,12 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm33008"></a>
+        <a id="id34742"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">kval <span class="command"><strong>arduinoRead</strong></span> iPort, iStream[, iSmooth]</pre>
       </div>
       <div class="refsect1">
-        <a id="idm33012"></a>
+        <a id="id34746"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>iPort</em></span> -- port number obtained from a
@@ -71,20 +71,20 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm33023"></a>
+        <a id="id34757"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the arduinoRead opcode. It uses the file <a class="ulink" href="examples/arduinoRead.csd" target="_top"><em class="citetitle">arduinoRead.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm33028"></a>
+          <a id="id34762"></a>
           <p class="title">
-            <strong>Example 63. Example of the arduinoRead opcode.</strong>
+            <strong>Example 64. Example of the arduinoRead opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm33035"></a>
+              <a id="id34769"></a>
               <pre class="programlisting">
 Arduino-Joystick2Csound1g-fm1-port (version with smoothing)
 
@@ -216,8 +216,8 @@ void put_val(int senChan, int senVal)
         <span class="c1">// the sensor data stream "senVal"</span>
 {       <span class="c1">// The packing of the data is sssssvvv 0vvvvvvv where s is a</span>
         <span class="c1">// senChan bit, v a senVal bit and 0 is zero` bit</span>
-  int low = senVal&amp;0x7f<span class="c1">;</span>
-  int hi = ((senVal&gt;&gt;7)&amp;0x0f) | ((senChan&amp;0x0f)<span class="err">&lt;</span><span class="nt">&lt;4</span><span class="err">);</span><span class="w">
+  int   low = senVal&amp;0x7f<span class="c1">;</span>
+  int hi = ((senVal&gt;&gt;7)&amp;0x07) | ((senChan&amp;0x1f)<span class="err">&lt;</span><span class="nt">&lt;3</span><span class="err">);</span><span class="w">
   </span><span class="err">Serial.write(low);</span><span class="w"> </span><span class="err">Serial.write(hi);</span><span class="w">
 </span><span class="err">}</span><span class="w">
 
@@ -271,15 +271,16 @@ void put_val(int senChan, int senVal)
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm33721"></a>
+        <a id="id35455"></a>
         <h2>See Also</h2>
+        <p> More information: <a class="ulink" href="https://csound.com/icsc2022/proceedings/New%20Arduino%20Opcodes%20to%20Simplify%20the%20Streaming%20of%20Sensor%20and%20Controller%20Data%20to%20Csound.pdf" target="_top"><em class="citetitle">New Arduino Opcodes to Simplify the Streaming of Sensor and Controller Data to Csound</em></a></p>
         <p>
       <a class="link" href="arduinoStart.html" title="arduinoStart"><em class="citetitle"></em>arduinoStart</a>,
       <a class="link" href="arduinoStop.html" title="arduinoStop"><em class="citetitle"></em>arduinoStop</a>,
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm33728"></a>
+        <a id="id35465"></a>
         <h2>Credits</h2>
         <p>
       </p>

@@ -6,7 +6,7 @@
     <title>Opcode Quick Reference</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="pt04.html" title="Part IV. Opcode Quick Reference" />
     <link rel="prev" href="pt04.html" title="Part IV. Opcode Quick Reference" />
@@ -348,11 +348,12 @@
       <p></p>
       <p>
 </p>
-      <pre class="synopsis">ares <a class="link" href="foscil.html" title="foscil">foscil</a> xamp, kcps, xcar, xmod, kndx, ifn [, iphs]</pre>
+      <pre class="synopsis">ares <a class="link" href="foscil.html" title="foscil">foscil</a> xamp, kcps, xcar, xmod, kndx [, ifn , iphs]</pre>
       <p></p>
       <p>
 </p>
-      <pre class="synopsis">ares <a class="link" href="foscili.html" title="foscili">foscili</a> xamp, kcps, xcar, xmod, kndx, ifn [, iphs]</pre>
+      <pre class="synopsis">ares <a class="link" href="foscili.html" title="foscili">foscili</a> xamp, kcps, xcar, xmod,
+    kndx [, ifn, iphs]</pre>
       <p></p>
       <p>
 </p>
@@ -398,8 +399,7 @@
       <p></p>
       <p>
 </p>
-      <pre class="synopsis">ares <a class="link" href="granule.html" title="granule">granule</a> xamp, ivoice, iratio, imode, ithd, ifn, ipshift, igskip, \
-      igskip_os, ilength, kgap, igap_os, kgsize, igsize_os, iatt, idec \
+      <pre class="synopsis">ares <a class="link" href="granule.html" title="granule">granule</a> xamp, ivoice, iratio, imode, ithd, ifn, ipshift, igskip, igskip_os, ilength, kgap, igap_os, kgsize, igsize_os, iatt, idec \
       [, iseed] [, ipitch1] [, ipitch2] [, ipitch3] [, ipitch4] [, ifnenv]</pre>
       <p></p>
       <p>
@@ -2431,7 +2431,9 @@
       <p></p>
       <p>
 </p>
-      <pre class="synopsis">a1, a2 <a class="link" href="babo.html" title="babo">babo</a> asig, ksrcx, ksrcy, ksrcz, irx, iry, irz [, idiff] [, ifno]</pre>
+      <pre class="synopsis">a1, a2 <a class="link" href="babo.html" title="babo">babo</a> asig, ksrcx, ksrcy,
+    ksrcz, irx, iry, irz [, idiff] [, ifno]</pre>
+      <pre class="synopsis">a1, a2 <a class="link" href="babo.html" title="babo">babo2</a> asig, ksrcx, ksrcy, ksrcz, irx, iry, irz [, idiff] [, ifno]</pre>
       <p></p>
       <p>
 </p>
@@ -2716,6 +2718,10 @@
       <p></p>
       <p>
 </p>
+      <pre class="synopsis">aout <a class="link" href="mode.html" title="mode">mode</a> ain, xfreq, xQ [, iskip]</pre>
+      <p></p>
+      <p>
+</p>
       <pre class="synopsis">ares <a class="link" href="tone.html" title="tone">tone</a> asig, khp [, iskip]</pre>
       <p></p>
       <p>
@@ -2974,8 +2980,8 @@
       <p></p>
       <p>
 </p>
-      <pre class="synopsis">ares <a class="link" href="filter2.html" title="filter2">filter2</a> asig, iM, iN, ib0, ib1, ..., ibM, ia1, ia2, ..., iaN</pre>
-      <pre class="synopsis">kres <a class="link" href="filter2.html" title="filter2">filter2</a> ksig, iM, iN, ib0, ib1, ..., ibM, ia1, ia2, ..., iaN</pre>
+      <pre class="synopsis">ares <a class="link" href="filter2.html" title="filter2">filter2</a> asig, ibcoefs, iacoefs, ib0, ib1, ..., ibM, ia1, ia2, ..., iaN</pre>
+      <pre class="synopsis">kres <a class="link" href="filter2.html" title="filter2">filter2</a> ksig, ibcoefs, iacoefs, ib0, ib1, ..., ibM, ia1, ia2, ..., iaN</pre>
       <p></p>
       <p>
 </p>
@@ -3808,6 +3814,24 @@
       <p></p>
       <p>
 </p>
+      <pre class="synopsis">ires <a class="link" href="elapsedcycles.html" title="elapsedcycles">elapsedcycles</a> </pre>
+      <pre class="synopsis">kres <a class="link" href="elapsedcycles.html" title="elapsedcycles">elapsedcycles</a> </pre>
+      <p></p>
+      <p>
+</p>
+      <pre class="synopsis">ires <a class="link" href="elapsedtime.html" title="elapsedtime">elapsedtime</a> </pre>
+      <pre class="synopsis">kres <a class="link" href="elapsedtime.html" title="elapsedtime">elapsedtime</a> </pre>
+      <p></p>
+      <p>
+</p>
+      <pre class="synopsis">kres <a class="link" href="eventcycles.html" title="eventcycles">eventcycles</a> </pre>
+      <p></p>
+      <p>
+</p>
+      <pre class="synopsis">kres <a class="link" href="eventtime.html" title="eventtime">eventtime</a> </pre>
+      <p></p>
+      <p>
+</p>
       <pre class="synopsis">ir <a class="link" href="readclock.html" title="readclock">readclock</a> inum</pre>
       <p></p>
       <p>
@@ -3882,11 +3906,7 @@
       <p></p>
       <p>
 </p>
-      <pre class="synopsis"><a class="link" href="JackoNoteOut.html" title="JackoNoteOut">JackoNoteOut </a> ScsoundPortName, kstatus, kchannel, kdata1[, kdata2]</pre>
-      <p></p>
-      <p>
-</p>
-      <pre class="synopsis"><a class="link" href="JackoOn.html" title="JackoOn">JackoOn </a>[iactive] </pre>
+      <pre class="synopsis"><a class="link" href="JackoNoteOut.html" title="JackoNoteOut">JackoNoteOut </a> ScsoundPortName, kchannel, kdata1[, kdata2]</pre>
       <p></p>
       <p>
 </p>
@@ -7040,7 +7060,7 @@
       <p></p>
       <p>
 </p>
-      <pre class="synopsis">i/kout[] <a class="link" href="setcol.html" title="setcol">setcol</a>i/kin[],i/kcol</pre>
+      <pre class="synopsis">i/kout[] <a class="link" href="setcol.html" title="setcol">setcol</a> i/kin[],i/kcol</pre>
       <p></p>
       <p>
 </p>
@@ -7210,6 +7230,10 @@
       <p></p>
       <p><strong>Deprecated. </strong>
 </p>
+      <p></p>
+      <p>
+</p>
+      <pre class="synopsis"><a class="link" href="JackoOn.html" title="JackoOn">JackoOn </a>[iactive] </pre>
       <p></p>
       <p>
 </p>
@@ -7393,7 +7417,7 @@ inum_parm, kupdate</pre>
       <p></p>
       <p>
 </p>
-      <pre class="synopsis"><a class="link" href="dnoise.html" title="dnoise">dnoise</a> [flags] -i noise_ref_file  -o output_soundfile  input_soundfile</pre>
+      <pre class="synopsis"><a class="link" href="dnoise.html" title="dnoise">dnoise</a> [flags] -i noise_ref_file  -o output_soundfile  soundfile_format  input_soundfile</pre>
       <p></p>
       <p>
 </p>

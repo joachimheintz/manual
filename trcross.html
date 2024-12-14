@@ -6,7 +6,7 @@
     <title>trcross</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="transegr.html" title="transegr" />
@@ -39,7 +39,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm352322"></a>
+        <a id="id357142"></a>
         <h2>Description</h2>
         <p>
       The <span class="emphasis"><em>trcross</em></span> opcode takes two inputs containg TRACKS pv streaming signals (as generated,
@@ -54,12 +54,12 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm352327"></a>
+        <a id="id357147"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">fsig <span class="command"><strong>trcross</strong></span> fin1, fin2, ksearch, kdepth [, kmode] </pre>
       </div>
       <div class="refsect1">
-        <a id="idm352331"></a>
+        <a id="id357151"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>fsig</em></span> -- output pv stream in TRACKS format 
@@ -84,20 +84,20 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm352345"></a>
+        <a id="id357165"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the trcross opcode. It uses the file <a class="ulink" href="examples/trcross.csd" target="_top"><em class="citetitle">trcross.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm352350"></a>
+          <a id="id357170"></a>
           <p class="title">
-            <strong>Example 1114. Example of the trcross opcode.</strong>
+            <strong>Example 1127. Example of the trcross opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm352357"></a>
+              <a id="id357177"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -116,7 +116,7 @@
 
 </span><span class="kd">instr</span><span class="w"> </span><span class="nf">1</span><span class="w">
 
-</span>a<span class="n">in1</span><span class="w"> </span><span class="nb">diskin2</span><span class="w"> </span><span class="s">"beats.wav"</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span>a<span class="n">in1</span><span class="w"> </span><span class="nb">diskin2</span><span class="w"> </span><span class="s">"drumsMlp.wav"</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w">
 </span>a<span class="n">in2</span><span class="w"> </span><span class="nb">diskin2</span><span class="w"> </span><span class="s">"fox.wav"</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w">
 
 </span>i<span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vi">p4</span><span class="w">
@@ -153,7 +153,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm352603"></a>
+        <a id="id357423"></a>
         <h2>Credits</h2>
         <p>
       </p>

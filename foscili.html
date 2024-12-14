@@ -6,7 +6,7 @@
     <title>foscili</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="foscil.html" title="foscil" />
@@ -39,29 +39,31 @@
           </p>
       </div>
       <div class="refsect1">
-        <a id="idm130700"></a>
+        <a id="id133240"></a>
         <h2>Description</h2>
         <p>
       Basic frequency modulated oscillator with linear interpolation.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm130703"></a>
+        <a id="id133243"></a>
         <h2>Syntax</h2>
-        <pre class="synopsis">ares <span class="command"><strong>foscili</strong></span> xamp, kcps, xcar, xmod, kndx, ifn [, iphs]</pre>
+        <pre class="synopsis">ares <span class="command"><strong>foscili</strong></span> xamp, kcps, xcar, xmod,
+    kndx [, ifn, iphs]</pre>
       </div>
       <div class="refsect1">
-        <a id="idm130707"></a>
+        <a id="id133247"></a>
         <h2>Initialization</h2>
         <p>
-      <span class="emphasis"><em>ifn</em></span> -- function table number. Requires a wrap-around guard point.
+      <span class="emphasis"><em>ifn</em></span> (optional) -- function table
+      number. Requires a wrap-around guard point. Defaults to a sine wave/
     </p>
         <p>
       <span class="emphasis"><em>iphs</em></span> (optional, default=0) -- initial phase of waveform in table <span class="emphasis"><em>ifn</em></span>, expressed as a fraction of a cycle (0 to 1). A negative value will cause phase initialization to be skipped. The default value is 0.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm130714"></a>
+        <a id="id133254"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>xamp</em></span> -- the amplitude of the output signal.
@@ -83,21 +85,21 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm130732"></a>
+        <a id="id133272"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the foscili opcode. It uses the file <a class="ulink" href="examples/foscili.csd" target="_top"><em class="citetitle">foscili.csd</em></a>.
 
       </p>
         <div class="example">
-          <a id="idm130737"></a>
+          <a id="id133277"></a>
           <p class="title">
-            <strong>Example 369. Example of the foscili opcode.</strong>
+            <strong>Example 370. Example of the foscili opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm130744"></a>
+              <a id="id133284"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -145,7 +147,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm130913"></a>
+        <a id="id133453"></a>
         <h2>See Also</h2>
         <p> More information about frequency modulation on Wikipedia: <a class="ulink" href="http://en.wikipedia.org/wiki/Frequency_modulation_synthesis" target="_top"><em class="citetitle">http://en.wikipedia.org/wiki/Frequency_modulation_synthesis</em></a></p>
       </div>

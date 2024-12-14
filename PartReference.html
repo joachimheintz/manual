@@ -6,7 +6,7 @@
     <title>Part III. Reference</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="prev" href="MiscopcodesTop.html" title="Miscellaneous opcodes" />
@@ -1957,6 +1957,22 @@
               </dt>
               <dt>
                 <span class="refentrytitle">
+                  <a href="elapsedcycles.html">elapsedcycles</a>
+                </span>
+                <span class="refpurpose"> — 
+      Read absolute time in k-rate cycles.
+    </span>
+              </dt>
+              <dt>
+                <span class="refentrytitle">
+                  <a href="elapsedtime.html">elapsedtime</a>
+                </span>
+                <span class="refpurpose"> — 
+      Read absolute time in seconds.
+    </span>
+              </dt>
+              <dt>
+                <span class="refentrytitle">
                   <a href="else.html">else</a>
                 </span>
                 <span class="refpurpose"> — 
@@ -2050,6 +2066,22 @@
                 <span class="refpurpose"> — 
       Generates a score event from an instrument.
           </span>
+              </dt>
+              <dt>
+                <span class="refentrytitle">
+                  <a href="eventcycles.html">eventcycles</a>
+                </span>
+                <span class="refpurpose"> — 
+      Read absolute time in k-rate cycles.
+    </span>
+              </dt>
+              <dt>
+                <span class="refentrytitle">
+                  <a href="eventtime.html">eventtime</a>
+                </span>
+                <span class="refpurpose"> — 
+      Read absolute time in seconds.
+    </span>
               </dt>
               <dt>
                 <span class="refentrytitle">
@@ -4173,14 +4205,6 @@
               </dt>
               <dt>
                 <span class="refentrytitle">
-                  <a href="JackoOn.html">JackoOn</a>
-                </span>
-                <span class="refpurpose"> — 
-      Enables or disables all Jack ports.
-    </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
                   <a href="JackoTransport.html">JackoTransport</a>
                 </span>
                 <span class="refpurpose"> — 
@@ -5805,7 +5829,7 @@ Phase-locked vocoder processing.
                   <a href="oscil.html">oscil</a>
                 </span>
                 <span class="refpurpose"> — 
-      A simple oscillator.
+      A simple oscillator without any interpolation.
     </span>
               </dt>
               <dt>
@@ -9672,7 +9696,7 @@ Synchronous granular synthesis.
                   <a href="trim.html">trim</a>
                 </span>
                 <span class="refpurpose"> — 
-      Adjust size o a one-dimensional array.
+      Adjust size of a one-dimensional array.
     </span>
               </dt>
               <dt>
@@ -11545,84 +11569,11 @@ Synchronous granular synthesis.
               </dt>
               <dt>
                 <span class="refentrytitle">
-                  <a href="abetarand.html">abetarand</a>
+                  <a href="JackoOn.html">JackoOn</a>
                 </span>
                 <span class="refpurpose"> — 
-      Deprecated.
-      
+      Enables or disables all Jack ports.
     </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="abexprnd.html">abexprnd</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-    </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="acauchy.html">acauchy</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="aexprand.html">aexprand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="agauss.html">agauss</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="agogobel.html">agogobel</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="alinrand.html">alinrand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="apcauchy.html">apcauchy</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="apoisson.html">apoisson</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="apow.html">apow</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
               </dt>
               <dt>
                 <span class="refentrytitle">
@@ -11631,30 +11582,6 @@ Synchronous granular synthesis.
                 <span class="refpurpose"> — 
       Deprecated.
     </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="atrirand.html">atrirand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="aunirand.html">aunirand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="aweibull.html">aweibull</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
               </dt>
               <dt>
                 <span class="refentrytitle">
@@ -11698,102 +11625,6 @@ Synchronous granular synthesis.
               </dt>
               <dt>
                 <span class="refentrytitle">
-                  <a href="ibetarand.html">ibetarand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ibexprnd.html">ibexprnd</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="icauchy.html">icauchy</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ictrl14.html">ictrl14</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ictrl21.html">ictrl21</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ictrl7.html">ictrl7</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="iexprand.html">iexprand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="igauss.html">igauss</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ilinrand.html">ilinrand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="imidic14.html">imidic14</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="imidic21.html">imidic21</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="imidic7.html">imidic7</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
                   <a href="instimek.html">instimek</a>
                 </span>
                 <span class="refpurpose"> — 
@@ -11803,110 +11634,6 @@ Synchronous granular synthesis.
               <dt>
                 <span class="refentrytitle">
                   <a href="instimes.html">instimes</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ioff.html">ioff</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ion.html">ion</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="iondur2.html">iondur2</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="iondur.html">iondur</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ioutat.html">ioutat</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ioutc14.html">ioutc14</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ioutc.html">ioutc</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ioutpat.html">ioutpat</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ioutpb.html">ioutpb</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ioutpc.html">ioutpc</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ipcauchy.html">ipcauchy</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ipoisson.html">ipoisson</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ipow.html">ipow</a>
                 </span>
                 <span class="refpurpose"> — 
       Deprecated.
@@ -11994,259 +11721,11 @@ Synchronous granular synthesis.
               </dt>
               <dt>
                 <span class="refentrytitle">
-                  <a href="itrirand.html">itrirand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="iunirand.html">iunirand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="iweibull.html">iweibull</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kbetarand.html">kbetarand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kbexprnd.html">kbexprnd</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kcauchy.html">kcauchy</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kdump2.html">kdump2</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kdump3.html">kdump3</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kdump4.html">kdump4</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kdump.html">kdump</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kexprand.html">kexprand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kfilter2.html">kfilter2</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kgauss.html">kgauss</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="klinrand.html">klinrand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kon.html">kon</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="koutat.html">koutat</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="koutc14.html">koutc14</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="koutc.html">koutc</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="koutpat.html">koutpat</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="koutpb.html">koutpb</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="koutpc.html">koutpc</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kpcauchy.html">kpcauchy</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kpoisson.html">kpoisson</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kpow.html">kpow</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kread2.html">kread2</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kread3.html">kread3</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kread4.html">kread4</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kread.html">kread</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
                   <a href="ktableseg.html">ktableseg</a>
                 </span>
                 <span class="refpurpose"> — 
       Deprecated.
     </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="ktrirand.html">ktrirand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kunirand.html">kunirand</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
-              </dt>
-              <dt>
-                <span class="refentrytitle">
-                  <a href="kweibull.html">kweibull</a>
-                </span>
-                <span class="refpurpose"> — 
-      Deprecated.
-          </span>
               </dt>
               <dt>
                 <span class="refentrytitle">
@@ -12602,7 +12081,7 @@ Synchronous granular synthesis.
                   </dt>
                   <dt>
                     <span class="section">
-                      <a href="UtilityOther.html">Other Csound Utilities (CS, CSB64ENC, ENVEXT, EXTRACTOR,
+                      <a href="UtilityOther.html">Other Csound Utilities (CS, CSB64ENC, DNOISE, ENVEXT, EXTRACTOR,
   MAKECSD, MIXER, SCALE)</a>
                     </span>
                   </dt>

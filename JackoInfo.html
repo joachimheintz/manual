@@ -6,7 +6,7 @@
     <title>JackoInfo</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="JackoFreewheel.html" title="JackoFreewheel" />
@@ -39,7 +39,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm166135"></a>
+        <a id="id169778"></a>
         <h2>Description</h2>
         <p>
     Plugin opcode in jacko. This opcode is part of the plugin repository and has to be installed separately. 
@@ -52,7 +52,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm166141"></a>
+        <a id="id169784"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">
           <span class="command">
@@ -61,7 +61,7 @@
         </pre>
       </div>
       <div class="refsect1">
-        <a id="idm166145"></a>
+        <a id="id169788"></a>
         <h2>Initialization</h2>
         <p>
       May be called any number of times in the orchestra header,
@@ -69,21 +69,34 @@
       in the Csound orchestra header.
     </p>
       </div>
+      <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+        <table border="0" summary="Note">
+          <tr>
+            <td rowspan="2" align="center" valign="top" width="25">
+              <img alt="[Note]" src="images/note.png" />
+            </td>
+            <th align="left">Note</th>
+          </tr>
+          <tr>
+            <td align="left" valign="top">works with an already running Jack daemon. Do not use -+rtaudio=jack in CsOptions</td>
+          </tr>
+        </table>
+      </div>
       <div class="refsect1">
-        <a id="idm166148"></a>
+        <a id="id169792"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the JackoInfo opcode. It uses the file <a class="ulink" href="examples/JackoInfo.csd" target="_top"><em class="citetitle">JackInfo.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm166153"></a>
+          <a id="id169797"></a>
           <p class="title">
-            <strong>Example 485. Example of the JackoInfo opcode.</strong>
+            <strong>Example 491. Example of the JackoInfo opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm166160"></a>
+              <a id="id169804"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -117,7 +130,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm166221"></a>
+        <a id="id169865"></a>
         <h2>See Also</h2>
         <p>
       <a class="link" href="JackoInit.html" title="JackoInit"><em class="citetitle">JackoInit</em></a>, 
@@ -135,7 +148,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm166248"></a>
+        <a id="id169892"></a>
         <h2>Credits</h2>
         <p>By: Michael Gogins 2010</p>
       </div>

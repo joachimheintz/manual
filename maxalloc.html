@@ -6,7 +6,7 @@
     <title>maxalloc</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="maxaccum.html" title="maxaccum" />
@@ -39,20 +39,20 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm197720"></a>
+        <a id="id201727"></a>
         <h2>Description</h2>
         <p>
       Limits the number of allocations of an instrument.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm197723"></a>
+        <a id="id201730"></a>
         <h2>Syntax</h2>
         <pre class="synopsis"><span class="command"><strong>maxalloc</strong></span> insnum, icount</pre>
         <pre class="synopsis"><span class="command"><strong>maxalloc</strong></span> Sinsname, icount</pre>
       </div>
       <div class="refsect1">
-        <a id="idm197729"></a>
+        <a id="id201736"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>insnum</em></span> -- instrument number
@@ -65,7 +65,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm197737"></a>
+        <a id="id201744"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>maxalloc</em></span> limits the number of simultaneous instances (notes) of an instrument. Any score events after the maximum has been reached, are ignored.
@@ -75,21 +75,21 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm197743"></a>
+        <a id="id201750"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the maxalloc opcode. It uses the file <a class="ulink" href="examples/maxalloc.csd" target="_top"><em class="citetitle">maxalloc.csd</em></a>.
 
       </p>
         <div class="example">
-          <a id="idm197748"></a>
+          <a id="id201755"></a>
           <p class="title">
-            <strong>Example 577. Example of the maxalloc opcode.</strong>
+            <strong>Example 588. Example of the maxalloc opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm197755"></a>
+              <a id="id201762"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -142,14 +142,14 @@ WARNING: cannot allocate last note because it exceeds instr maxalloc
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm197907"></a>
+        <a id="id201914"></a>
         <h2>See Also</h2>
         <p>
       <a class="link" href="cpuprc.html" title="cpuprc"><em class="citetitle">cpuprc</em></a>, <a class="link" href="prealloc.html" title="prealloc"><em class="citetitle">prealloc</em></a>
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm197914"></a>
+        <a id="id201921"></a>
         <h2>Credits</h2>
         <p>
       </p>

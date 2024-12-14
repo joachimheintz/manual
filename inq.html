@@ -6,7 +6,7 @@
     <title>inq</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="ino.html" title="ino" />
@@ -39,7 +39,7 @@
           </p>
       </div>
       <div class="refsect1">
-        <a id="idm163350"></a>
+        <a id="id166162"></a>
         <h2>Description</h2>
         <p>
       Reads quad audio data from an external device or stream.
@@ -65,36 +65,36 @@
         </div>
       </div>
       <div class="refsect1">
-        <a id="idm163356"></a>
+        <a id="id166168"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">ar1, ar2,  ar3, a4 <span class="command"><strong>inq</strong></span></pre>
       </div>
       <div class="refsect1">
-        <a id="idm163360"></a>
+        <a id="id166172"></a>
         <h2>Performance</h2>
         <p>
       Reads quad audio data from an external device or stream. If the command-line <a class="link" href="CommandFlags.html#FlagsMinusLowerI"><em class="citetitle">-i</em></a> flag is set, sound is read continuously from the audio input stream (e.g. <span class="emphasis"><em>stdin</em></span> or a soundfile) into an internal buffer. Any number of these opcodes can read freely from this buffer.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm163366"></a>
+        <a id="id166178"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the inq opcode. It uses the file <a class="ulink" href="examples/inq.csd" target="_top"><em class="citetitle">inq.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm163371"></a>
+          <a id="id166183"></a>
           <p class="title">
-            <strong>Example 472. Example of the inq opcode.</strong>
+            <strong>Example 473. Example of the inq opcode.</strong>
           </p>
           <div class="example-contents">
             <div class="refsect1">
-              <a id="idm163373"></a>
+              <a id="id166185"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
 <span class="c1">; Select audio/midi flags here according to platform</span>
--odac  -idac <span class="c1">;;;realtime audio I/O</span>
+-odac  -iadc <span class="c1">;;;realtime audio I/O</span>
 <span class="c1">; For Non-realtime ouput leave only the line below:</span>
 <span class="c1">; inq.wav -W ;;; for file output any platform</span>
 <span class="nt">&lt;/CsOptions&gt;</span>
@@ -136,7 +136,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm163598"></a>
+        <a id="id166410"></a>
         <h2>See Also</h2>
         <p>
       <a class="link" href="diskin.html" title="diskin"><em class="citetitle">diskin</em></a>,
@@ -149,7 +149,7 @@
      </p>
       </div>
       <div class="refsect1">
-        <a id="idm163615"></a>
+        <a id="id166427"></a>
         <h2>Credits</h2>
         <p>
       </p>
